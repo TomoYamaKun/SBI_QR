@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent">
+
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:padding="16dp">
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="接続状態：未接続"
+ android:textSize="18sp"
+ android:textStyle="bold" />
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="8dp"
+ android:text="認証状態：未認証"
+ android:textSize="16sp" />
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="8dp"
+ android:text="QR状態：待機中"
+ android:textSize="16sp" />
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:gravity="center"
+ android:text="QRコード"
+ android:textSize="18sp"
+ android:textStyle="bold" />
+
+ <TextView
+ android:id="@+id/qr_image_placeholder"
+ android:layout_width="match_parent"
+ android:layout_height="240dp"
+ android:layout_marginTop="8dp"
+ android:background="#EEEEEE"
+ android:gravity="center"
+ android:text="QR画像はまだありません"
+ android:textSize="16sp" />
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="16dp"
+ android:text="QR ID：---"
+ android:textSize="16sp" />
+
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="8dp"
+ android:text="受信日時：---"
+ android:textSize="16sp" />
+
+ <Button
+ android:id="@+id/button_processed"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:enabled="false"
+ android:text="処理済み" />
+
+ <Button
+ android:id="@+id/button_reconnect"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:enabled="false"
+ android:text="手動再接続" />
+
+ <Button
+ android:id="@+id/button_disconnect"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:enabled="false"
+ android:text="接続切断" />
+
+ </LinearLayout>
+</ScrollView>
